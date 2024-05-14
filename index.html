@@ -25,7 +25,37 @@
 	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
 	<link rel="stylesheet" href="css/testimonials.css">
 	<link rel="icon" type="image/png" href="images/ZA.png" />
+	<style>
 
+        .skills, .tools {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .skill, .tool {
+            width: 45%;
+            margin: 10px 2.5%;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+        .progress {
+            height: 20px;
+            background-color: #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        .progress-bar {
+            height: 100%;
+            border-radius: 5px;
+        }
+        .progress-bar.color-1 { background-color: #4caf50; }
+        .progress-bar.color-2 { background-color: #2196f3; }
+        .progress-bar.color-3 { background-color: #ff9800; }
+        .progress-bar.color-4 { background-color: #9c27b0; }
+        .progress-bar.color-5 { background-color: #f44336; }
+        .progress-bar.color-6 { background-color: #ffeb3b; }
+    </style>
 </head>
 
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
@@ -60,7 +90,7 @@
 						<h1>Hamid AHAGGACH</h1>
 						<h2>I'm a
 							<span class="txt-rotate" data-period="2000"
-								data-rotate='["AI Engineer.", "Data Scientist.", "PhD Student"]'></span>
+								data-rotate='["Data Scientist.", "PhD Student"]'></span>
 						</h2>
 						<br>
 						<a target="_blank" href="https://www.linkedin.com/in/hamidahaggach/" class="btn btn-primary py-3 px-3">Check My Profile</a>
@@ -137,9 +167,12 @@
     <div class="container">
         <div class="owl-carousel">
             <div class="item"><a href="http://www.fsdmfes.ac.ma/" class="partner"><img src="images/fsdm.png" class="img-fluid" alt="fsdm"></a></div>
-            <div class="item"><a href="https://lipn.univ-paris13.fr/~bennani/Web_Master_Info/Master_Info_2.html" class="partner"><img src="images/eid2.png" class="img-fluid" alt="eid2"></a></div>
             <div class="item"><a href="https://www.univ-paris13.fr/" class="partner"><img src="images/sorbonne.jpg" class="img-fluid" alt="Colorlib Template"></a></div>
-            <div class="item"><a href="https://numerique.univ-paris13.fr/la-maison-des-sciences-numeriques-lamsn/" class="partner"><img src="images/new-logo-lamsn.png" class="img-fluid" alt="lamsn"></a></div>
+            <div class="item"><a href="https://lib.u-bourgogne.fr/" class="partner"><img src="images/logo-lib.jpg" class="img-fluid" alt="lib"></a></div>
+            <div class="item"><a href="https://www.syartec.com" class="partner"><img src="images/syartec.jpg" class="img-fluid" alt="syartec"></a></div>
+            <div class="item"><a href="https://en.u-bourgogne.fr/" class="partner"><img src="images/universite-bourgogne.png" class="img-fluid" alt="ub"></a></div>
+			<div class="item"><a href="http://www.fsdmfes.ac.ma/" class="partner"><img src="images/fsdm.png" class="img-fluid" alt="fsdm"></a></div>
+            <div class="item"><a href="https://www.univ-paris13.fr/" class="partner"><img src="images/sorbonne.jpg" class="img-fluid" alt="Colorlib Template"></a></div>
             <div class="item"><a href="https://lib.u-bourgogne.fr/" class="partner"><img src="images/logo-lib.jpg" class="img-fluid" alt="lib"></a></div>
             <div class="item"><a href="https://www.syartec.com" class="partner"><img src="images/syartec.jpg" class="img-fluid" alt="syartec"></a></div>
             <div class="item"><a href="https://en.u-bourgogne.fr/" class="partner"><img src="images/universite-bourgogne.png" class="img-fluid" alt="ub"></a></div>
@@ -158,8 +191,9 @@
 							<li><a href="#page-1">Education</a></li>
 							<li><a href="#page-2">Experience</a></li>
 							<li><a href="#page-3">Teaching</a></li>
+							<li><a href="#page-33">Publications</a></li>
 							<li><a href="#page-4">Skills</a></li>
-							<li><a href="#page-5">Certificats</a></li>
+							</li>
 						</ul>
 					</nav>
 				</div>
@@ -238,7 +272,7 @@
 									<li>Deployed all models using Streamlit, along with web services (REST), and front-end technologies including JavaScript, CSS, and HTML.</li>
 								
 								<li>Training, fine-tuning, and deploying AI models to solve complex business problems.</li>
-								<li>Extracting entities and relationships using open-source Large Language Models (LLMs) such as Llama2, Falcon, Mistral, BLOOM, Pythia, and others.</li>
+								<li>Extracting entities and relationships using open-source Large Language Models (LLMs) such as Llama2, Falcon, Mistral, Dolly, Pythia, and others.</li>
 							</ul>
 							</div>
 						</div>
@@ -257,7 +291,6 @@
 								<img height="24px" width="18px" src="images/loc.png" alt="Location Icon"> Paris, France
 								<p>Internship as part of an Erasmus+ mobility on the topic: "Supervised Collaborative Learning from Privileged Information."</p>
 								<p>Developed both theoretical and algorithmic solutions for Unsupervised Domain Adaptation using Hierarchical Optimal Transport.</p>
-								<p>Published a scientific article: <a href="https://arxiv.org/abs/2112.02073">https://arxiv.org/abs/2112.02073</a></p>
 							</div>
 						</div>
 						<div class="resume-wrap d-flex ftco-animate">
@@ -299,419 +332,254 @@
     </div>
 </div>
 
+<!-- Publication -->
+<div id="page-33" class="page two">
+    <h2 class="heading">Publications</h2>
+    <ul>
+        <li>
+            <div class="resume-wrap d-flex ftco-animate">
+                <div class="icon d-flex align-items-center justify-content-center">
+                    <span class="icon-book"></span>
+                </div>
+                <div class="text pl-3">
+                    <h5>Information extraction from automotive reports for ontology population</h5>
+                    H Ahaggach, L Abrouk, E Lebon<br>
+                    <em>Applied Ontology, 1-30, 2024</em><br>
+                    <a href="https://content.iospress.com/articles/applied-ontology/ao230002">PDF</a> | <a target="" href="https://scholar.googleusercontent.com/scholar.bib?q=info:FggAexKPZeQJ:scholar.google.com/&output=citation&scisdr=ClFzZm9KEOqlgeha9yg:AFWwaeYAAAAAZkNc7yjqvx7DWPePPuIfCMBQXSE&scisig=AFWwaeYAAAAAZkNc74pnIz-9Zwv3ft3JD0N_nfc&scisf=4&ct=citation&cd=-1&hl=en">BibTeX</a>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="resume-wrap d-flex ftco-animate">
+                <div class="icon d-flex align-items-center justify-content-center">
+                    <span class="icon-book"></span>
+                </div>
+                <div class="text pl-3">
+                    <h5>Information extraction and ontology population using car insurance reports</h5>
+                    H Ahaggach, L Abrouk, E Lebon<br>
+                    <em>International Conference on Information Technology-New Generations, 405-411, 2023</em><br>
+                    <a href="https://link.springer.com/chapter/10.1007/978-3-031-28332-1_46">PDF</a> | <a href="https://scholar.googleusercontent.com/scholar.bib?q=info:yjPukkvr3uoJ:scholar.google.com/&output=citation&scisdr=ClFzZm9KEOqlgehbTF4:AFWwaeYAAAAAZkNdVF5ARUWGDQ4PKwl-V9wrX3s&scisig=AFWwaeYAAAAAZkNdVNpD19qtwqCHLL-jXx8rvGI&scisf=4&ct=citation&cd=-1&hl=en">BibTeX</a>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="resume-wrap d-flex ftco-animate">
+                <div class="icon d-flex align-items-center justify-content-center">
+                    <span class="icon-book"></span>
+                </div>
+                <div class="text pl-3">
+                    <h5>L'analyse des dommages aux voitures à l'aide de la reconnaissance d'entités nommées et d'ontologie</h5>
+                    H Ahaggach, L Abrouk, E Lebon<br>
+                    <em>EGC, 637-638, 2023</em><br>
+                    <a href="https://editions-rnti.fr/?inprocid=1002874">PDF</a> | <a href="https://scholar.googleusercontent.com/scholar.bib?q=info:noGspYPnVjoJ:scholar.google.com/&output=citation&scisdr=ClFzZm9KEOqlgehbsls:AFWwaeYAAAAAZkNdqlsmGAlDGXhtUbzRa-SK9HQ&scisig=AFWwaeYAAAAAZkNdqhQj923RIhclTmGGtpEQUIU&scisf=4&ct=citation&cd=-1&hl=fr">BibTeX</a>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="resume-wrap d-flex ftco-animate">
+                <div class="icon d-flex align-items-center justify-content-center">
+                    <span class="icon-book"></span>
+                </div>
+                <div class="text pl-3">
+                    <h5>OntoFiC: an ontology for financial fraud detection and customer behavior modeling</h5>
+                    L Abrouk, H Chergui, H Ahaggach<br>
+                    <em>Proceedings of the International Conference on Advances in Social Networks, 2023</em><br>
+                    <a href="path/to/pdf4.pdf">PDF</a> | <a href="path/to/bibtex4.bib">BibTeX</a>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="resume-wrap d-flex ftco-animate">
+                <div class="icon d-flex align-items-center justify-content-center">
+                    <span class="icon-book"></span>
+                </div>
+                <div class="text pl-3">
+                    <h5>OntoFiC: une ontologie pour la détection de fraude financière et la modélisation des comportements des clients</h5>
+                    H Chergui, L Abrouk, H Ahaggach, B Auger, D Cheron<br>
+                    <em>INFormatique des Organisations et Systèmes d’Information et de Décision, 479-480, 2023</em><br>
+                    <a href="https://dl.acm.org/doi/abs/10.1145/3625007.3631503">PDF</a> | <a href="https://scholar.googleusercontent.com/scholar.bib?q=info:CDBQCRenY8EJ:scholar.google.com/&output=citation&scisdr=ClFzZm9KEOqlgehbzvM:AFWwaeYAAAAAZkNd1vNPDOBJfiM4BT6VG43Tk3A&scisig=AFWwaeYAAAAAZkNd1ikzgiirhr8J1Vq8uGDlEXw&scisf=4&ct=citation&cd=-1&hl=fr">BibTeX</a>
+                </div>
+            </div>
+        </li>
+
+        <li>
+            <div class="resume-wrap d-flex ftco-animate">
+                <div class="icon d-flex align-items-center justify-content-center">
+                    <span class="icon-book"></span>
+                </div>
+                <div class="text pl-3">
+                    <h5>𝐶𝑎𝑟𝐷𝑅𝑃-An Advanced Tool for Price Prediction from Unstructured Damage Reports</h5>
+                    H Ahaggach, L Abrouk, E Lebon<br>
+                    <em>2023</em><br>
+                    <a href="https://ceur-ws.org/Vol-3632/ISWC2023_paper_459.pdf">PDF</a> | <a href="https://scholar.googleusercontent.com/scholar.bib?q=info:0ZrNvGl3lmEJ:scholar.google.com/&output=citation&scisdr=ClFzZm9KEOqlgehYK1Q:AFWwaeYAAAAAZkNeM1T1kDp2kVU5BYKeEsHXZI8&scisig=AFWwaeYAAAAAZkNeM16cWVWbjxfSTOrmkebKuGE&scisf=4&ct=citation&cd=-1&hl=fr">BibTeX</a>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="resume-wrap d-flex ftco-animate">
+                <div class="icon d-flex align-items-center justify-content-center">
+                    <span class="icon-book"></span>
+                </div>
+                <div class="text pl-3">
+                    <h5>Hierarchical optimal transport for unsupervised domain adaptation</h5>
+                    M El Hamri, Y Bennani, I Falih, H Ahaggach<br>
+                    <em>arxiv, 2022</em><br>
+                    <a href="https://arxiv.org/pdf/2112.02073">PDF</a> | <a href="https://scholar.googleusercontent.com/scholar.bib?q=info:EF7S7v5S_0wJ:scholar.google.com/&output=citation&scisdr=ClFzZm9KEOqlgehYiK4:AFWwaeYAAAAAZkNekK62LlwmNaZCOHGq3Gemc_0&scisig=AFWwaeYAAAAAZkNekFg93AikeqmFXAbS3K-ldUE&scisf=4&ct=citation&cd=-1&hl=en&scfhb=1">BibTeX</a>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="resume-wrap d-flex ftco-animate">
+                <div class="icon d-flex align-items-center justify-content-center">
+                    <span class="icon-book"></span>
+                </div>
+                <div class="text pl-3">
+                    <h5>Predicting car sale time with data analytics and machine learning</h5>
+                    H Ahaggach, L Abrouk, S Foufou, E Lebon<br>
+                    <em>IFIP International Conference on Product Lifecycle Management, 399-409, 2022</em><br>
+                    <a href="https://hal.science/hal-04250878/document">PDF</a> | <a href="https://scholar.googleusercontent.com/scholar.bib?q=info:DrkUqS3rnEwJ:scholar.google.com/&output=citation&scisdr=ClFzZm9KEOqlgehYs4U:AFWwaeYAAAAAZkNeq4VvM0JUWpPckpcGl5cNsbc&scisig=AFWwaeYAAAAAZkNeq4BQ67lg4d1x7fWX17rJjj0&scisf=4&ct=citation&cd=-1&hl=en">BibTeX</a>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="resume-wrap d-flex ftco-animate">
+                <div class="icon d-flex align-items-center justify-content-center">
+                    <span class="icon-book"></span>
+                </div>
+                <div class="text pl-3">
+                    <h5>Data Analytics and Machine Learning for Smart Decision Making in Automotive Sector</h5>
+                    H Ahaggach<br>
+                    <em>International Conference on Enterprise Design, Operations, and Computing, 2022</em><br>
+                    <a href="https://link.springer.com/chapter/10.1007/978-3-031-26886-1_24">PDF</a> | <a href="https://scholar.googleusercontent.com/scholar.bib?q=info:UHPOHAvpRKIJ:scholar.google.com/&output=citation&scisdr=ClFzZm9KEOqlgehY3UA:AFWwaeYAAAAAZkNexUDw_Xft8Ng3DQyxV1DhKIM&scisig=AFWwaeYAAAAAZkNexRcbbjtKVvPcjlUBa28mHjQ&scisf=4&ct=citation&cd=-1&hl=en">BibTeX</a>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>
 
 
-					<!-- Fundational Skills-->
-					<div id="page-4" class= "page three">
-						<h2 class="heading">Fundational Skills</h2>
 
-						<div class="row progress-circle mb-5">
 
-							<!-- Star Skill -->
-							<div class="col-lg-4 mb-4">
-								<div class="bg-white rounded-lg shadow p-4">
-									<h2 class="h5 font-weight-bold text-center mb-4">AI</h2>
-									<!-- Progress bar 1 -->
-									<div class="progress mx-auto" data-value='90'>
-										<span class="progress-left">
-											<span class="progress-bar border-primary"></span>
-										</span>
-										<span class="progress-right">
-											<span class="progress-bar border-primary"></span>
-										</span>
-										<div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
-											<div class="h2 font-weight-bold">90<sup class="small">%</sup></div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<!-- END Skill -->
+<div  id="page-4"class="section">
+	<h2 class="heading" >Professional Skills</h2>
+	<div class="skills">
+		<div class="skill">
+			<h3>Machine Learning</h3>
+			<div class="progress">
+				<div class="progress-bar color-1" style="width: 95%;">95%</div>
+			</div>
+		</div>
+		<div class="skill">
+			<h3>Data Analysis</h3>
+			<div class="progress">
+				<div class="progress-bar color-2" style="width: 90%;">90%</div>
+			</div>
+		</div>
+		<div class="skill">
+			<h3>Deep Learning</h3>
+			<div class="progress">
+				<div class="progress-bar color-3" style="width: 85%;">85%</div>
+			</div>
+		</div>
+		<div class="skill">
+			<h3>Statistics</h3>
+			<div class="progress">
+				<div class="progress-bar color-4" style="width: 85%;">85%</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div  class="section">
+	<h2 class="heading">Technical Tools</h2>
+	<div class="tools">
+		<div class="tool">
+			<h3>Python / R</h3>
+			<div class="progress">
+				<div class="progress-bar color-1" style="width: 90%;">90%</div>
+			</div>
+		</div>
+		<div class="tool">
+			<h3>Jupyter / VS-Code</h3>
+			<div class="progress">
+				<div class="progress-bar color-2" style="width: 85%;">85%</div>
+			</div>
+		</div>
+		<div class="tool">
+			<h3>SQL - PL/SQL</h3>
+			<div class="progress">
+				<div class="progress-bar color-3" style="width: 85%;">85%</div>
+			</div>
+		</div>
+		<div class="tool">
+			<h3>C/C++</h3>
+			<div class="progress">
+				<div class="progress-bar color-4" style="width: 85%;">85%</div>
+			</div>
+		</div>
+		<div class="tool">
+			<h3>Django / Flask</h3>
+			<div class="progress">
+				<div class="progress-bar color-5" style="width: 75%;">75%</div>
+			</div>
+		</div>
+		<div class="tool">
+			<h3>JSON / XML</h3>
+			<div class="progress">
+				<div class="progress-bar color-6" style="width: 60%;">60%</div>
+			</div>
+		</div>
+		<div class="tool">
+			<h3>Git</h3>
+			<div class="progress">
+				<div class="progress-bar color-1" style="width: 85%;">85%</div>
+			</div>
+		</div>
+		<div class="tool">
+			<h3>Java/JEE</h3>
+			<div class="progress">
+				<div class="progress-bar color-2" style="width: 80%;">80%</div>
+			</div>
+		</div>
+		<div class="tool">
+			<h3>PHP</h3>
+			<div class="progress">
+				<div class="progress-bar color-3" style="width: 80%;">80%</div>
+			</div>
+		</div>
+		<div class="tool">
+			<h3>HTML5/CSS3/JS</h3>
+			<div class="progress">
+				<div class="progress-bar color-4" style="width: 90%;">90%</div>
+			</div>
+		</div>
+		<div class="tool">
+			<h3>Arduino</h3>
+			<div class="progress">
+				<div class="progress-bar color-5" style="width: 80%;">80%</div>
+			</div>
+		</div>
+		<div class="tool">
+			<h3>Android</h3>
+			<div class="progress">
+				<div class="progress-bar color-6" style="width: 80%;">80%</div>
+			</div>
+		</div>
+		<div class="tool">
+			<h3>Talend</h3>
+			<div class="progress">
+				<div class="progress-bar color-2" style="width: 85%;">85%</div>
+			</div>
+		</div>
+		<div class="tool">
+			<h3>Power BI</h3>
+			<div class="progress">
+				<div class="progress-bar color-3" style="width: 85%;">85%</div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
 
-							<!-- Start Skill -->
-							<div class="col-lg-4 mb-4">
-								<div class="bg-white rounded-lg shadow p-4">
-									<h2 class="h5 font-weight-bold text-center mb-4">Machine Learning</h2>
-									<!-- Progress bar 1 -->
-									<div class="progress mx-auto" data-value='85'>
-										<span class="progress-left">
-											<span class="progress-bar border-primary"></span>
-										</span>
-										<span class="progress-right">
-											<span class="progress-bar border-primary"></span>
-										</span>
-										<div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
-											<div class="h2 font-weight-bold">85<sup class="small">%</sup></div>
-										</div>
-									</div>
-									<!-- Demo info start -->
-									<div class="row text-center mt-4">
-										<div class="col-6 border-right">
-											<div class="h6 font-weight-bold mb-0">Supervised</div><span class="small text-gray"></span>
-										</div>
-										<div class="col-6">
-											<div class="h6 font-weight-bold mb-0">Unsupervised</div>
-											<span class="small text-gray"></span>
-										</div>
-									</div>
-									<!-- Demo info end -->
-								</div>
-							</div>
-							<!-- END Skill -->
-
-							<!-- Start Skill -->
-							<div class="col-lg-4 mb-4">
-								<div class="bg-white rounded-lg shadow p-4">
-									<h2 class="h5 font-weight-bold text-center mb-4">Deep Learning</h2>
-									<!-- Progress bar 1 -->
-									<div class="progress mx-auto" data-value='80'>
-										<span class="progress-left">
-											<span class="progress-bar border-primary"></span>
-										</span>
-										<span class="progress-right">
-											<span class="progress-bar border-primary"></span>
-										</span>
-										<div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
-											<div class="h2 font-weight-bold">80<sup class="small">%</sup></div>
-										</div>
-									</div>
-									<!-- Demo info start -->
-									<div class="row text-center mt-4">
-										<div class="col-6 border-right">
-											<div class="h6 font-weight-bold mb-0">TensorFlow</div>
-											<span class="small text-gray">Keras</span>
-										</div>
-										<div class="col-6">
-											<div class="h6 font-weight-bold mb-0">Pytorch</div>
-											<span class="small text-gray"></span>
-										</div>
-									</div>
-									<!-- Demo info end -->
-								</div>
-							</div>
-							<!-- END Skill -->
-
-							<!-- Start Skill -->
-							<div class="col-lg-4 mb-4">
-								<div class="bg-white rounded-lg shadow p-4">
-									<h2 class="h5 font-weight-bold text-center mb-4">Data Vizualization</h2>
-									<!-- Progress bar 1 -->
-									<div class="progress mx-auto" data-value='70'>
-										<span class="progress-left">
-											<span class="progress-bar border-primary"></span>
-										</span>
-										<span class="progress-right">
-											<span class="progress-bar border-primary"></span>
-										</span>
-										<div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
-											<div class="h2 font-weight-bold">70<sup class="small">%</sup></div>
-										</div>
-									</div>
-									<!-- Demo info start -->
-									<div class="row text-center mt-4">
-										<div class="col-6 border-right">
-											<div class="h6 font-weight-bold mb-0">Matplotlib</div>
-											<span class="small text-gray">Seaborn </span>
-										</div>
-										<div class="col-6">
-											<div class="h6 font-weight-bold mb-0">Tableau</div>
-											<span class="small text-gray">PowerBI</span>
-										</div>
-									</div>
-								</div>
-							</div>
-							<!-- END Skill -->
-
-							<!-- Start Skill -->
-							<div class="col-lg-4 mb-4">
-								<div class="bg-white rounded-lg shadow p-4">
-									<h2 class="h5 font-weight-bold text-center mb-4">Internet Of Things</h2>
-									<div class="progress mx-auto" data-value='65'>
-										<span class="progress-left">
-											<span class="progress-bar border-primary"></span>
-										</span>
-										<span class="progress-right">
-											<span class="progress-bar border-primary"></span>
-										</span>
-										<div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
-											<div class="h2 font-weight-bold">65<sup class="small">%</sup></div>
-										</div>
-									</div>
-									<div class="row text-center mt-4">
-										<div class="col-6 border-right">
-											<div class="h6 font-weight-bold mb-0">Arduino</div>
-										</div>
-										<div class="col-6">
-											<div class="h6 font-weight-bold mb-0">Raspberry pi</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<!-- END Skill -->
-
-							<!-- Start Skill -->
-							<div class="col-lg-4 mb-4">
-								<div class="bg-white rounded-lg shadow p-4">
-									<h2 class="h5 font-weight-bold text-center mb-4">Computer Vision</h2>
-									<!-- Progress bar 1 -->
-									<div class="progress mx-auto" data-value='80'>
-										<span class="progress-left">
-											<span class="progress-bar border-primary"></span>
-										</span>
-										<span class="progress-right">
-											<span class="progress-bar border-primary"></span>
-										</span>
-										<div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
-											<div class="h2 font-weight-bold">80<sup class="small">%</sup></div>
-										</div>
-									</div>
-									<!-- Demo info start -->
-									<div class="row text-center mt-4">
-										<div class="col-6 border-right">
-											<div class="h6 font-weight-bold mb-0">Image Mining</div>
-										</div>
-										<div class="col-6">
-											<div class="h6 font-weight-bold mb-0">Object Detection</div>
-										</div>
-									</div>
-									<!-- Demo info end -->
-								</div>
-							</div>
-							<!-- END Skill -->
-
-							<!-- Start Skill -->
-							<div class="col-lg-4 mb-4">
-								<div class="bg-white rounded-lg shadow p-4">
-									<h2 class="h5 font-weight-bold text-center mb-4">SQL / PLSQL</h2>
-									<!-- Progress bar 1 -->
-									<div class="progress mx-auto" data-value='75'>
-										<span class="progress-left">
-											<span class="progress-bar border-primary"></span>
-										</span>
-										<span class="progress-right">
-											<span class="progress-bar border-primary"></span>
-										</span>
-										<div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
-											<div class="h2 font-weight-bold">75<sup class="small">%</sup></div>
-										</div>
-									</div>
-									<!-- Demo info start -->
-									<div class="row text-center mt-4">
-										<div class="col-6 border-right">
-											<div class="h6 font-weight-bold mb-0">Oracle</div>
-											<span class="small text-gray">MySQL</span>
-											<br>
-											<span class="small text-gray">SQLite</span>
-										</div>
-										<div class="col-6">
-											<div class="h6 font-weight-bold mb-0">PostgreSQL</div>
-											<span class="small text-gray"></span>
-										</div>
-									</div>
-									<!-- Demo info end -->
-								</div>
-							</div>
-							<!-- END Skill -->
-
-							<!-- Start Skill -->
-							<div class="col-lg-4 mb-4">
-								<div class="bg-white rounded-lg shadow p-4">
-									<h2 class="h5 font-weight-bold text-center mb-4">Math</h2>
-									<!-- Progress bar 1 -->
-									<div class="progress mx-auto" data-value='90'>
-										<span class="progress-left">
-											<span class="progress-bar border-primary"></span>
-										</span>
-										<span class="progress-right">
-											<span class="progress-bar border-primary"></span>
-										</span>
-										<div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
-											<div class="h2 font-weight-bold">90<sup class="small">%</sup></div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<!-- END Skill -->
-
-							<!-- Start Skill -->
-							<div class="col-lg-4 mb-4">
-								<div class="bg-white rounded-lg shadow p-4">
-									<h2 class="h5 font-weight-bold text-center mb-4">Statistics</h2>
-
-									<!-- Progress bar 1 -->
-									<div class="progress mx-auto" data-value='85'>
-										<span class="progress-left">
-											<span class="progress-bar border-primary"></span>
-										</span>
-										<span class="progress-right">
-											<span class="progress-bar border-primary"></span>
-										</span>
-										<div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
-											<div class="h2 font-weight-bold">85<sup class="small">%</sup></div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<!-- END Skill -->
-						</div>
-
-						<!-- Technical Tools -->
-						<h2 class="heading">Technical Tools</h2>
-						<div class="row">
-							<div class="col-md-6 animate-box">
-								<div class="progress-wrap ftco-animate">
-									<h3>Python / R</h3>
-									<div class="progress">
-										<div class="progress-bar color-1" role="progressbar" aria-valuenow="90"
-											aria-valuemin="0" aria-valuemax="100" style="width:90%">
-											<span>90%</span>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 animate-box">
-								<div class="progress-wrap ftco-animate">
-									<h3>Jupyter / VS-Code</h3>
-									<div class="progress">
-										<div class="progress-bar color-2" role="progressbar" aria-valuenow="85"
-											aria-valuemin="0" aria-valuemax="100" style="width:85%;background: indigo">
-											<span>85%</span>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 animate-box">
-								<div class="progress-wrap ftco-animate">
-									<h3>SQL -PL/SQL</h3>
-									<div class="progress">
-										<div class="progress-bar color-3" role="progressbar" aria-valuenow="85"
-											aria-valuemin="0" aria-valuemax="100" style="width:85%;background: teal">
-											<span>85%</span>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 animate-box">
-								<div class="progress-wrap ftco-animate">
-									<h3>C/C++</h3>
-									<div class="progress">
-										<div class="progress-bar color-3" role="progressbar" aria-valuenow="85"
-											aria-valuemin="0" aria-valuemax="100" style="width:85%; background:orange;">
-											<span>85%</span>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 animate-box">
-								<div class="progress-wrap ftco-animate">
-									<h3>Django / Flask</h3>
-									<div class="progress">
-										<div class="progress-bar color-4" role="progressbar" aria-valuenow="75"
-											aria-valuemin="0" aria-valuemax="100" style="width:75%;background: #2e5c8d">
-											<span>75%</span>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 animate-box">
-								<div class="progress-wrap ftco-animate">
-									<h3>JSON/XML</h3>
-									<div class="progress">
-										<div class="progress-bar color-4" role="progressbar" aria-valuenow="60"
-											aria-valuemin="0" aria-valuemax="100" style="width:60%;background: #154c61">
-											<span>60%</span>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 animate-box">
-								<div class="progress-wrap ftco-animate">
-									<h3>Git</h3>
-									<div class="progress">
-										<div class="progress-bar color-4" role="progressbar" aria-valuenow="85"
-											aria-valuemin="0" aria-valuemax="100" style="width:85%;background: pink">
-											<span>85%</span>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 animate-box">
-								<div class="progress-wrap ftco-animate">
-									<h3>Java/JEE</h3>
-									<div class="progress">
-										<div class="progress-bar color-5" role="progressbar" aria-valuenow="70"
-											aria-valuemin="0" aria-valuemax="100" style="width:80%;background: red">
-											<span>80%</span>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 animate-box">
-								<div class="progress-wrap ftco-animate">
-									<h3>PHP</h3>
-									<div class="progress">
-										<div class="progress-bar color-5" role="progressbar" aria-valuenow="70"
-											aria-valuemin="0" aria-valuemax="100" style="width:80%;background: cyan">
-											<span>80%</span>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 animate-box">
-								<div class="progress-wrap ftco-animate">
-									<h3>HTML5/CSS3/JS</h3>
-									<div class="progress">
-										<div class="progress-bar color-4" role="progressbar" aria-valuenow="90"
-											aria-valuemin="0" aria-valuemax="100" style="width:90%;background: gray">
-											<span>90%</span>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 animate-box">
-								<div class="progress-wrap ftco-animate">
-									<h3>Arduino</h3>
-									<div class="progress">
-										<div class="progress-bar color-5" role="progressbar" aria-valuenow="70"
-											aria-valuemin="0" aria-valuemax="100" style="width:80%;background: #343a40">
-											<span>80%</span>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 animate-box">
-								<div class="progress-wrap ftco-animate">
-									<h3>Android</h3>
-									<div class="progress">
-										<div class="progress-bar color-6" role="progressbar" aria-valuenow="80"
-											aria-valuemin="0" aria-valuemax="100" style="width:80%;background: yellow">
-											<span>80%</span>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 animate-box">
-								<div class="progress-wrap ftco-animate">
-									<h3>Talend</h3>
-									<div class="progress">
-										<div class="progress-bar color-2" role="progressbar" aria-valuenow="85"
-											aria-valuemin="0" aria-valuemax="100" style="width:85%;background: indigo">
-											<span>85%</span>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 animate-box">
-								<div class="progress-wrap ftco-animate">
-									<h3>Power BI</h3>
-									<div class="progress">
-										<div class="progress-bar color-3" role="progressbar" aria-valuenow="85"
-											aria-valuemin="0" aria-valuemax="100" style="width:85%;background: teal">
-											<span>85%</span>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
 
 						<!-- EndTechnical Tools -->
 
@@ -719,30 +587,7 @@
 
 					</div>
 
-					<!-- Awards -->
-					<div id="page-5" class="page four">
-						<h2 class="heading">Certificats</h2>
-						<div class="resume-wrap d-flex ftco-animate">
-							<div class="icon d-flex align-items-center justify-content-center">
-								<span class="flaticon-ideas"></span>
-							</div>
-							<div class="text pl-3">
-								<span class="date">2020-2021</span>
-								<h2>Machine learning</h2>
-								<span class="position">coursera</span>
-							</div>
-						</div>
-						<div class="resume-wrap d-flex ftco-animate">
-							<div class="icon d-flex align-items-center justify-content-center">
-								<span class="flaticon-ideas"></span>
-							</div>
-							<div class="text pl-3">
-								<span class="date">2020-2021</span>
-								<h2>Deep learning specializations</h2>
-								<span class="position">coursera</span>
-							</div>
-						</div>
-					</div>
+					
 				</div>
 			</div>
 		</div>
@@ -756,8 +601,10 @@
 				<div class="col-md-7 ftco-animate text-center">
 					<h2>Contact<span> Me</span></h2>
 					<!-- <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p> -->
-					<p class="mb-0"><a href="#contact-section" class="btn btn-primary py-3 px-5">Hire me</a></p>
-				</div>
+					<p class="mb-0">
+						<a href="#contact-section" class="btn btn-primary py-3 px-5" style="border: 1px solid orange; background-color: #a0f669; color: #000;">Hire me</a>
+					  </p>
+									  </div>
 			</div>
 		</div>
 	</section>
@@ -828,28 +675,6 @@
 		<div class="container">
 
 
-
-
-
-			<div class="row mb-12">
-				<div class="col-md-4 text-center">
-					<div class="ftco-footer-widget mb-4">
-						<ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
-						
-						</ul>
-					</div>
-				</div>
-				<div class="col-md">
-					<div class="ftco-footer-widget mb-4 ml-md-4">
-						<br><br>
-						Copyright &copy;
-						<script>document.write(new Date().getFullYear());</script>
-						<span>Hamid</span> AHAGGACH
-						&amp; made with <span class="heart">❤</span> by <a href="https://colorlib.com"
-						target="_blank">Colorlib</a>
-					</div>
-				</div>
-			</div>
 
 
 
